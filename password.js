@@ -26,7 +26,7 @@ reader.question("Welcome to the Password Validator tool. Please Enter a password
             }
         }
         specialP(){
-            if (this.input.includes("!","@","#","$","%","&","*")){
+            if (/[!,@,#,$,%,&,*]/.test(this.input)){
                 this.special = true
             } else {
                 console.log("Please ensure your password contains one of the following: ! @ # $ % & *")
