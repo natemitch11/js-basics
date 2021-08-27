@@ -16,9 +16,16 @@
 
 //CODE HERE
 
+const me = {
+  firstName: 'Nate',
+  state: 'Utah',
+  age: 27,
+  greeter(){
+    return `Hello! My name is ${me.firstName} and I live in ${me.state}.`
+  }
+}
 
-
-
+console.log(me.greeter())
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -45,3 +52,17 @@
 */
 
 //CODE HERE
+
+function carFactory(make, model, year){
+  const car = {
+    make : make,
+    model : model,
+    year : year,
+    isNew : false,
+  }
+  if (car.year > 2018){
+    car.isNew = true
+  } return car
+}
+
+console.log(carFactory("Nissan", "GTR", 2019))
