@@ -11,6 +11,8 @@
 
 //CODE HERE
 
+let gitDefinition = "Git is a software that handles version control locally on your machine through the command line and then synchronizes that local data with cloud data on GitHub upon command"
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +20,8 @@
 */
 
 //CODE HERE
+
+let gitHubDefinition = "GitHub is a cloud that stores the local Git version data of your software and makes it available publically"
 
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
@@ -35,6 +39,11 @@
 
 //CODE HERE
 
+const init ={
+    description: 'initializes a local repository on your machine in the current directory you are in',
+    code : "git init"
+}
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,6 +51,12 @@
 */
 
 //CODE HERE
+
+const clone = {
+    description: "clones a repository into a new directory location, you can then fetch and pull to synchronize remote data with local data", 
+    code : 'git clone'
+}
+
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -51,6 +66,11 @@
 
 //CODE HERE
 
+const status = {
+    description: "Checks the status of the files in the repository to see which ones are tracked and which ones are not within the directory", 
+    code : 'git status'
+}
+
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,6 +78,11 @@
 */
 
 //CODE HERE
+
+const add = {
+    description: "Adds a file to the queue to recieve a commit message/ be pushed to the cloud", 
+    code : 'git add *FILENAME*' || "git add ."
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -67,6 +92,11 @@
 
 //CODE HERE
 
+const commit = {
+    description: "creates a version of your software with changes currently made stored locally. Needs to have a message to document what has changed", 
+    code : 'git commit -m "This is the message"'
+}
+
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +105,8 @@
 */
 
 //CODE HERE
+
+const push = {
+    description: "pushes a repository with all commit changes and updated files to the cloud on GitHub", 
+    code : 'git push'
+}
