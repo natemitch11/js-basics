@@ -66,12 +66,3 @@ reader.question("Welcome to the Password Validator tool. Please Enter a password
     reader.close();
 });
 
-
-
-
-
-
-
-
-
-// const password = input
